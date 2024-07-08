@@ -127,27 +127,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKu-ND-xCh">
-                                <rect key="frame" x="140" y="763" width="97" height="35"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJs-is-iar">
+                                <rect key="frame" x="172" y="700" width="50" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="About US"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.circle.fill" catalog="system"/>
                                 <connections>
-                                    <segue destination="DEt-L8-jzg" kind="show" id="VK3-Bc-rNh"/>
+                                    <action selector="onPlayPauseClick:" destination="wfC-jf-Ldl" eventType="touchUpInside" id="rGX-6E-FK1"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SC5-52-ovW">
-                                <rect key="frame" x="16" y="63" width="361" height="692"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PmP-hb-q1z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="fBK-ev-sQB"/>
                     <connections>
-                        <outlet property="cwebView" destination="SC5-52-ovW" id="8Z4-nW-962"/>
+                        <outlet property="playPauseButton" destination="EJs-is-iar" id="XaX-y5-M0O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tas-du-Hl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -183,6 +178,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="play.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
