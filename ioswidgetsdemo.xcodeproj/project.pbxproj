@@ -17,6 +17,7 @@
 		84A9B87C2C37F04C00B7C5FD /* ioswidgetsdemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9B87B2C37F04C00B7C5FD /* ioswidgetsdemoUITests.swift */; };
 		84A9B87E2C37F04C00B7C5FD /* ioswidgetsdemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9B87D2C37F04C00B7C5FD /* ioswidgetsdemoUITestsLaunchTests.swift */; };
 		84A9B88B2C3BAC9300B7C5FD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9B88A2C3BAC9300B7C5FD /* SecondViewController.swift */; };
+		84A9B88D2C3BC13E00B7C5FD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A9B88C2C3BC13E00B7C5FD /* logo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		84A9B87B2C37F04C00B7C5FD /* ioswidgetsdemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioswidgetsdemoUITests.swift; sourceTree = "<group>"; };
 		84A9B87D2C37F04C00B7C5FD /* ioswidgetsdemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioswidgetsdemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		84A9B88A2C3BAC9300B7C5FD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		84A9B88C2C3BC13E00B7C5FD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				84A9B8602C37F04B00B7C5FD /* Main.storyboard */,
 				84A9B88A2C3BAC9300B7C5FD /* SecondViewController.swift */,
 				84A9B8632C37F04C00B7C5FD /* Assets.xcassets */,
+				84A9B88C2C3BC13E00B7C5FD /* logo.jpg */,
 				84A9B8652C37F04C00B7C5FD /* LaunchScreen.storyboard */,
 				84A9B8682C37F04C00B7C5FD /* Info.plist */,
 			);
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A9B88D2C3BC13E00B7C5FD /* logo.jpg in Resources */,
 				84A9B8672C37F04C00B7C5FD /* LaunchScreen.storyboard in Resources */,
 				84A9B8642C37F04C00B7C5FD /* Assets.xcassets in Resources */,
 				84A9B8622C37F04B00B7C5FD /* Main.storyboard in Resources */,
