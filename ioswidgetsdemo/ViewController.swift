@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        loader.isHidden = true
         
     }
     
@@ -64,10 +65,10 @@ class ViewController: UIViewController {
             textField.isSecureTextEntry = true
         }
         
-        print(alertController.textFields)
+        print(alertController.textFields ?? "")
         
         let action1 = UIAlertAction(title: "Connect", style: .destructive, handler:nil)
-        let action2 = UIAlertAction(title: "No", style: .default, handler:nil)
+        _ = UIAlertAction(title: "No", style: .default, handler:nil)
         
         alertController.addAction(action1)
     
@@ -102,8 +103,17 @@ class ViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var loader: UIActivityIndicatorView!
+
+
+    @IBAction func onStartLoader(_ sender: UIButton) {
+        loader.isHidden = false 
+        loader.startAnimating()
+    }
     
-    
-    
+    @IBAction func onStopLoader(_ sender: UIButton) {
+        loader.isHidden = true 
+        loader.stopAnimating()
+    }
 }
 
