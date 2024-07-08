@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  AboutUsController.swift
 //  ioswidgetsdemo
 //
 //  Created by Dhaval Nakum on 08/07/24.
@@ -7,21 +7,15 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
-    
-    
+class AboutUsController: UIViewController {
 
-    @IBOutlet weak var cwebView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        cwebView.loadRequest(URLRequest(url:  URL(string: "https://stackoverflow.com/questions/50928331/how-to-load-image-from-local-image-path-ios-swift-4")!))
 
         // Do any additional setup after loading the view.
     }
     
-    
-    
+
     /*
     // MARK: - Navigation
 
