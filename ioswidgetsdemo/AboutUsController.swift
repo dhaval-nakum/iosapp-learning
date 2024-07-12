@@ -1,10 +1,3 @@
-//
-//  AboutUsController.swift
-//  ioswidgetsdemo
-//
-//  Created by Dhaval Nakum on 08/07/24.
-//
-
 import UIKit
 
 class AboutUsController: UIViewController {
