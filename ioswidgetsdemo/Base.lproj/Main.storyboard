@@ -16,36 +16,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DnK-mD-d5R">
-                                <rect key="frame" x="39" y="262" width="314" height="30"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Z9a-SR-6Wf">
+                                <rect key="frame" x="0.0" y="103" width="393" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Four"/>
+                                </segments>
                                 <connections>
-                                    <action selector="SliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="shV-eO-C1g"/>
+                                    <action selector="segmentOnChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="qA3-hF-wCn"/>
                                 </connections>
-                            </slider>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ycF-p9-4j1">
-                                <rect key="frame" x="136" y="344" width="94" height="32"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iy-YW-Hqj">
+                                <rect key="frame" x="65" y="190" width="240" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Open Action Sheet"/>
                                 <connections>
-                                    <action selector="stepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="fnP-ll-Pc1"/>
+                                    <action selector="openActionBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fI2-xA-Pp1"/>
                                 </connections>
-                            </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXl-zi-1pb">
-                                <rect key="frame" x="102" y="416" width="275" height="21"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHz-TF-AOb">
+                                <rect key="frame" x="44" y="233" width="282" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Action Sheet With Text Form Field"/>
+                                <connections>
+                                    <action selector="onTapActionWithTextField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WBc-1K-duF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27j-dv-OrY">
+                                <rect key="frame" x="97" y="276" width="177" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Alert dialog with call"/>
+                                <connections>
+                                    <action selector="onTapAlertDialogCallMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBB-s5-CCi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="PWJ-Cn-Fj1"/>
                     <connections>
-                        <outlet property="labelText" destination="yXl-zi-1pb" id="eTK-nW-1Ni"/>
-                        <outlet property="slider" destination="DnK-mD-d5R" id="tNm-FX-lp8"/>
-                        <outlet property="stepper" destination="ycF-p9-4j1" id="O4h-sa-o92"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="Hm9-fC-WOB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
